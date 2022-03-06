@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(131, 58, 180);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+#header {
+  position: absolute;
+  height: 30px;
+}
+
+button {
+  margin-top: 100px;
+}
+
+#header.activated #one {
+  width: 15px;
+  transform: rotate(45deg);
+  top: auto !important;
+  left: 17px;
+  bottom: 18.8px !important;
+}
+
+#header.activated #three {
+  width: 15px;
+  transform: rotate(-45deg);
+  left: 17px;
+  bottom: auto !important;
+  top: 18.8px !important;
+}
+
+#header > .span {
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 30px;
+}
+
+#one {
+  top: 0px;
+}
+
+#two {
+  top: 14px;
+}
+
+#three {
+  bottom: 0px;
+}
